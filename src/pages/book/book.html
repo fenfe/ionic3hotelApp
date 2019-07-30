@@ -1,0 +1,95 @@
+<ion-header >
+    <ion-navbar  color="mytheme">
+      <ion-title>Book  <ion-icon name="more" (click)="presentPopover()" style="margin-left: 70%" ></ion-icon></ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="../../assets/imgs/logpo.PNG" width="60%" height="90%" >
+      </div>
+      <h3>Please fill in the following</h3>
+    </div>
+
+
+  <!-- inputs -->
+  <div class="inputs">
+    <div class="checkin">
+      <ion-item>
+        <ion-label floating style="color: black; font-size: 100%; font-weight: 500">Check-In date</ion-label>
+        <ion-datetime style="color: goldenrod; border-bottom: 1px solid black" displayFormat="DD/MM/YYYY"
+          [(ngModel)]="booking.checkin"></ion-datetime>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label floating style="color: black; font-size: 100%; font-weight: 500">Check-out date</ion-label>
+        <ion-datetime style="color: goldenrod; border-bottom: 1px solid black" displayFormat="DD/MM/YYYY"
+          [(ngModel)]="booking.checkout"></ion-datetime>
+      </ion-item>
+ </div>
+  
+ <div class="guests">
+
+      <ion-item>
+        <ion-label floating style="color: black; font-size: 100%; font-weight: 500"> Adults</ion-label>
+        <ion-select [(ngModel)]="booking.adults" style="color: goldenrod; border-bottom: 1px solid black">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+          <ion-option>4</ion-option>
+          <ion-option>5</ion-option>
+          <ion-option>6</ion-option>
+        </ion-select>
+      </ion-item>
+
+
+
+      <ion-item>
+        <ion-label floating style="color: black; font-size: 100%; font-weight: 500">Children</ion-label>
+        <ion-select [(ngModel)]="booking.children" style="color: goldenrod; border-bottom: 1px solid black">
+            <ion-option>0</ion-option>
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+          <ion-option>4</ion-option>
+          <ion-option>5</ion-option>
+          <ion-option>6</ion-option>
+        </ion-select>
+      </ion-item>
+</div>
+ 
+
+      <ion-item>
+        <ion-label floating style="color: black; font-size: 100%; font-weight: 500">Number of Rooms</ion-label>
+        <ion-select [(ngModel)]="booking.rooms" style="color: goldenrod; border-bottom: 1px solid black">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+          <ion-option>4</ion-option>
+          <ion-option>5</ion-option>
+          <ion-option>6</ion-option>
+        </ion-select>
+      </ion-item>
+
+
+
+      <ion-item>
+        <ion-label floating style="color: black; font-size: 100%; font-weight: 500">Meal type</ion-label>
+        <ion-select [(ngModel)]="booking.meals" style="color: goldenrod; border-bottom: 1px solid black">
+          <ion-option value="460">Full Board R460.00</ion-option>
+          <ion-option value="300">Half board R300.00</ion-option>
+          <ion-option value="0">No meals thank you!</ion-option>
+        </ion-select>
+      </ion-item>
+</div>
+    
+<div class="btn">
+  <button id="next" (click)="cancel()"  ion-button clear round large style="color: #fff; width: 45%; letter-spacing: 3px; background:rgb(53, 52, 52)  ; font-size: 0.7em; padding: 5%; font-family:Georgia, 'Times New Roman', Times, serif;" >Cancel</button>
+  <button id="skip" (click)="book()" ion-button clear round large style="color: #fff; width: 45%; letter-spacing: 3px; background: rgba(167, 122, 37, 1); font-size: 0.7em; padding: 5%; font-family:Georgia, 'Times New Roman', Times, serif;">Book Now </button>
+ </div>
+  
+  </div>
+</ion-content>

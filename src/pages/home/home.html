@@ -1,14 +1,79 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+ <ion-header >
+  <ion-navbar  color="mytheme">
+    <ion-title>Home</ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> 
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+
+<ion-content>
+ 
+<div class="slides" >
+    <ion-slides  autoplay="1000" loop="true" speed="2000" pager>
+
+        <ion-slide style="background-image: url(../../assets/imgs/nicee.jpeg);background-repeat:no-repeat;background-size:cover;height:100vh;background-position:center;">
+        <div class="text">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil quod voluptatibus excepturi quasi autem?</p>
+        </div>
+      </ion-slide>
+    
+      <!-- <ion-slide style="background-image: url(../../assets/imgs/italy.jpg);background-repeat:no-repeat;background-size:cover; height:100vh;background-position:center;">
+        <div class="text">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil quod voluptatibus excepturi quasi autem?</p>
+        </div>
+      </ion-slide>
+ -->
+      <ion-slide style="background-image: url(../../assets/imgs/relax.jpg);background-repeat:no-repeat;background-size:cover; height:100vh;background-position:center;">
+        <div class="text">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil quod voluptatibus excepturi quasi autem?</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide style="background-image: url(../../assets/imgs/forest3.jpg);background-repeat:no-repeat;background-size:cover; height:100vh;background-position:center;">
+        <div class="text">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil quod voluptatibus excepturi quasi autem?</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide style="background-image: url(../../assets/imgs/front1.jpg);background-repeat:no-repeat;background-size:cover; height:100vh;background-position:center;">
+        <div class="text">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil quod voluptatibus excepturi quasi autem?</p>
+        </div>
+      </ion-slide>
+
+      <ion-slide style="background-image: url(../../assets/imgs/pool4.jpg);background-repeat:no-repeat;background-size:cover; height:100vh;background-position:center;">
+        <div class="text">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil quod voluptatibus excepturi quasi autem?</p>
+        </div>
+      </ion-slide>
+     
+    </ion-slides>
+
+    <div class="btn">
+      <div class="logo">
+        <img src="../../assets/imgs/logpo.PNG" width="60%" height="60%" >
+
+      </div>
+
+       <div class="btns">
+
+        <button (click)="gonext()" ion-button clear round large style="color: #fff; letter-spacing: 3px; background:rgba(66, 65, 65, 0.541)  ; font-size: 80%; padding: 8%; font-family:Georgia, 'Times New Roman', Times, serif;" ion-button block color="secondary"><p>Stay</p></button>
+        <button (click)="goplay()" ion-button clear round large style="color: #fff; letter-spacing: 3px; background: rgba(66, 65, 65, 0.541); font-size:  80%; padding: 8%; font-family:Georgia, 'Times New Roman', Times, serif;"  ion-button block color="danger">Play</button>
+        <button (click)="goeat()" ion-button clear round large style="color: #fff; letter-spacing: 3px; background: rgba(66, 65, 65, 0.541); font-size:  80%; padding: 8%; font-family:Georgia, 'Times New Roman', Times, serif;"   ion-button block color="danger">Eat & Drink</button>
+        <button (click)="gosee()"  ion-button clear round large style="color: #fff; letter-spacing: 3px; background: rgba(66, 65, 65, 0.541); font-size:  80%; padding: 8%; font-family:Georgia, 'Times New Roman', Times, serif;"   ion-button block color="danger">See & Do</button>
+        <button (click)="gospa()"  ion-button clear round large style="color: #fff; letter-spacing: 3px; background: rgba(66, 65, 65, 0.541); font-size:  80%; padding: 8%; font-family:Georgia, 'Times New Roman', Times, serif;"   ion-button block color="danger">Spa Services</button>
+        <button (click)="goother()" ion-button clear round large style="color: #fff; letter-spacing: 3px; background: rgba(66, 65, 65, 0.541); font-size: 80%; padding: 8%; font-family:Georgia, 'Times New Roman', Times, serif;"   ion-button block color="danger">Other Services</button>
+   
+      </div>
+       <!-- profiles --> 
+   <div class="profiles">
+     <div class="one" (click)="profile()"><ion-icon name="person" ></ion-icon><p>Profile</p></div>
+     <div class="one" (click)="viewhistory()" id="middle">  <ion-icon name="paper"></ion-icon><p (click)="viewhistory()">Reservation</p></div>
+      <div class="one"  (click)="signOut()"> <ion-icon name="log-out"></ion-icon> <p>Sign-out</p></div>
+ 
+ 
+    </div>
+      
+</div>
+</div>
 </ion-content>

@@ -1,0 +1,70 @@
+<ion-header >
+    <ion-navbar  color="mytheme">
+      <ion-title>Book <ion-icon name="more" (click)="presentPopover()" style="margin-left: 70%" ></ion-icon></ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content>
+  <div class="container">
+      <div class="slides">
+       
+        <ion-slides autoplay="3000" loop="true" speed="900" pager >
+            
+  <ion-slide>
+      <img src="../../assets/imgs/bedroom-suite1.jpg">
+    </ion-slide>
+  
+    <ion-slide>
+      <img src="../../assets/imgs/bathroom4.jpg">
+    </ion-slide>
+  
+    <ion-slide >
+      <img src="../../assets/imgs/bsuite8.jpg">
+    </ion-slide>
+  
+    </ion-slides>
+  </div>
+ 
+  <div class="info">
+    <div class="texty">
+<h4>{{room}}</h4>
+<p>Rest, assured.</p>
+<h6>In This Room</h6>
+</div>
+<div class="icons">
+<div class="one"> 1 Doubble bed</div>
+<div class="one">2 People</div>
+</div>
+  </div>
+  <div class="info2">
+<h5>Highlights</h5>
+<div class="list">
+  <ul class="two">
+    <li>46" television</li>
+    <li>Spa-inspired bathroom </li>
+     <li>Serta pillow top bed</li>
+  </ul>
+  <ul class="two">
+      <li>Minibar</li>
+      <li>Walk-in shower</li>
+       <li>In-room Wi-Fi</li>
+    </ul>
+   
+ </div>
+<div class="amenities">
+  <h5>Amenities</h5>
+  <ul>
+    <li>Feather and down-free bedding</li>
+    <li>Hair dryer</li>
+    <li>Iron and full-sized ironing board</li>
+  </ul>
+</div> 
+  </div> 
+  <div class="btn">
+    <button id="next" (click)="cancel()"  ion-button clear round large style="color: #fff; width: 45%; letter-spacing: 3px; background:rgb(53, 52, 52)  ; font-size: 0.7em; padding: 5%; font-family:Georgia, 'Times New Roman', Times, serif;" >Cancel</button>
+    <button id="skip" (click)="bookRoom()" ion-button clear round large style="color: #fff; width: 45%; letter-spacing: 3px; background: rgba(167, 122, 37, 1); font-size: 0.7em; padding: 5%; font-family:Georgia, 'Times New Roman', Times, serif;">Book Now </button>
+   </div>
+<!--  <button ion-button full secondary>book now</button> -->
+   </div> 
+
+</ion-content>

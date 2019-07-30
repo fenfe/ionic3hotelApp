@@ -1,0 +1,21 @@
+<ion-header >
+  <ion-navbar  color="mytheme">
+    <ion-title>Rooms <ion-icon name="more" (click)="presentPopover()" style="margin-left: 70%" ></ion-icon></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-card *ngFor="let n of rooms">
+      <img *ngIf="n.images[0]" src="{{n.images[0]}}" (click)="viewRoom(n)" />
+      <ion-card-content>
+        <div class="paras">
+          <p class="roomname">{{n.roomname}}</p>
+          <p class="rootype">R{{n.price}}.00 per night</p>
+        </div>
+     
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

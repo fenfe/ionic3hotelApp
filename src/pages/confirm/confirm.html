@@ -1,0 +1,32 @@
+
+ <ion-header >
+  <ion-navbar  color="mytheme">
+    <ion-title>Confirm  <ion-icon name="more" (click)="presentPopover()" style="margin-left: 70%" ></ion-icon></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <div class="container">
+    <!-- <h1>Your Personal Details are:</h1>
+    <p *ngIf="bookindData"> Firstname: {{bookingData.roomname}} </p>
+    <p *ngIf="bookindData"> Lastname :{{bookindData.roomname}} </p>
+    <p *ngIf="bookindData"> Contact: {{bookindData.roomname}} </p>
+    <p *ngIf="bookindData"> Email :{{bookindData.roomname}} </p>
+    <p *ngIf="bookindData"> {{bookindData.roomname}} </p>
+ -->
+ <div class="contents">
+    <h1>Your booking is:</h1>
+<p *ngIf="bookingData"> Check-in date:{{bookingData.checkin}} </p>
+<p *ngIf="bookingData"> Check-out date: {{bookingData.checkout}} </p>
+<p *ngIf="bookingData"> Number of adults: {{bookingData.adults}} </p>
+<p *ngIf="bookingData">  Number of children: {{bookingData.children}} </p>
+<p *ngIf="bookingData">Number of rooms: {{bookingData.rooms}} </p>
+<p *ngIf="bookingData">Meals: {{bookingData.meals}} </p>
+<p *ngIf="bookingData">  Total fee: {{bookingData.price}} </p>
+</div>
+    <div class="btn">
+        <button id="next" (click)="next()"  ion-button clear round large style="color: #fff; width: 40%; letter-spacing: 3px; background:rgb(53, 52, 52)  ; font-size: 80%; padding: 5%; font-family:Georgia, 'Times New Roman', Times, serif;" >Cancel</button>
+        <button id="skip" (click)="gopay()" ion-button clear round large style="color: #fff; width: 40%; letter-spacing: 3px; background: rgba(167, 122, 37, 1); font-size: 80%; padding: 5%; font-family:Georgia, 'Times New Roman', Times, serif;">Confirm</button>
+       </div>
+      </div>
+</ion-content>

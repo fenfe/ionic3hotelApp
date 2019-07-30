@@ -1,0 +1,138 @@
+page-registermodal {
+  
+    ion-content {
+         
+            
+            background-image: url(../../assets/imgs/formbackground.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+         width: 100vw;
+         
+       
+         @font-face {
+            font-family: 'Tangerine', cursive;
+             src: url('https://fonts.googleapis.com/css?family=Satisfy|Tangerine&display=swap');
+         }
+         
+        .container {
+            /* width: 100%;
+            height: 100% !important;
+             */
+           // border: 1px solid red;
+           display: flex;
+           flex-direction: column;
+        }
+        #image {
+            
+           background-image: url(../../assets/imgs/formbackground.jpg);
+           background-attachment: fixed;
+           background-position: center;
+           background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        }
+        .header {
+            margin-left: 10%;
+            width: 80%;
+            height: 30%;
+           // border: 1px solid green;
+         
+          display: flex;
+          flex-direction: column;
+          /* justify-content: center;
+          align-items: center; */
+          overflow: hidden;
+           //
+           .logo {
+             margin-left: 30%;
+             margin-top: 5%;
+             width: 40%;
+            // border: 1px solid red;
+            height: 50%;
+           }
+           .logo > img {
+             width: 100%;
+          height: 100%;
+           } 
+        }
+        .h1 {
+          //border: 1px solid yellow;
+          height: 50%;
+        }
+        h1 {
+           //border: 1px solid red;
+         font-size: 13vw;
+             color: rgba(167, 122, 37, 1);
+             font-family: 'Tangerine', cursive;
+               text-align: center;
+               //margin-top: 99%;
+        }
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+            text-align: center;
+            color: rgba(167, 122, 37, 1);
+        }
+        .inputs {
+            margin-left: 10%;
+            padding: 5%;
+            width: 80%;
+           height: 45%;
+          //  border: 1px solid rgb(18, 138, 250);
+        
+        }
+        #btn {
+           margin-top: 10%;
+            height: 10%;
+        }
+      button {
+         // margin-top: 15px;
+          width: 100%;
+          
+          border-radius: 5%;
+          font-size: 20%;
+          font-weight: bold;
+          background: transparent;
+            opacity: 0.9;
+           background-color: rgba(0, 0, 0, 0.9);
+          // border: 1px solid rgba(167, 122, 37, 1);
+          color: whitesmoke;
+          letter-spacing: 2px;
+         // box-shadow: 2px 2px 2px  rgba(238, 228, 228, 0.5);
+      }
+        .buttom {
+            
+            justify-content: space-around;
+           // margin-bottom: 50%;
+            margin-left: 10%;
+            display: flex;
+            width: 80%;
+            height: 15%;
+          //  border: 1px solid rgb(18, 138, 250);
+           overflow: hidden;
+        } 
+        
+        .login {
+             position: absolute;
+            bottom: 0; 
+            background-color:rgba(167, 122, 37, 1);
+            width: 100%;
+            height: 10%;
+            // border: 1px solid rgb(247, 9, 9); 
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+        .login > p {
+            // border: 1px solid rgb(247, 9, 9); 
+          // margin-bottom: 50%;
+            font-size: 5vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            
+        }
+    }
+    }
+    

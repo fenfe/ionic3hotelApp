@@ -1,0 +1,30 @@
+page-rooms {
+    ion-content {
+      
+      
+        .roomname {
+            color: black;
+            font-size: 1em;
+        }
+        .paras {
+            display: flex;
+            
+        }
+        .roomname {
+    
+    width: 60%;
+    font-weight: 500;
+    font-size: 1.2em;
+    
+        }
+        .rootype {
+            font-size: 1em;
+          
+            width: 40%;
+            text-align: end;
+            //font-weight: bolder;
+            color: goldenrod;
+        }
+    }
+    }
+    

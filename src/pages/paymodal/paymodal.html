@@ -1,0 +1,59 @@
+<ion-header >
+    <ion-navbar  color="mytheme">
+      <ion-title>Book  <ion-icon name="more" (click)="presentPopover()" style="margin-left: 70%" ></ion-icon></ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+      
+
+      <ion-item>
+          <ion-label floating  style="color: black; font-size: 100%; font-weight: 500">(Cardholder) Name</ion-label>
+          <ion-input type="text" [(ngModel)]="userpayment.name" style="color: goldenrod; border-bottom: 1px solid black" ></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating style="color: black; font-size: 100%; font-weight: 500">(Cardholder) Surname</ion-label>
+            <ion-input type="text" [(ngModel)]="userpayment.surname" style="color: goldenrod; border-bottom: 1px solid black"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label floating style="color: black; font-size: 100%; font-weight: 500">Phone Number</ion-label>
+              <ion-input type="number" [(ngModel)]="userpayment.phone" style="color: goldenrod; border-bottom: 1px solid black"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating style="color: black; font-size: 100%; font-weight: 500">Email</ion-label>
+                <ion-input type="email"[(ngModel)]="userpayment.email" style="color: goldenrod; border-bottom: 1px solid black"></ion-input>
+              </ion-item>
+
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-visa"></i>
+    <ion-item>
+      <ion-label floating style="color: black; font-size: 100%; font-weight: 500">Credit card number</ion-label>
+      <ion-input type="number" [(ngModel)]="userpayment.cardnumber" style="color: goldenrod; border-bottom: 1px solid black"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating style="color: black; font-size: 100%; font-weight: 500">Expiry Date</ion-label>
+      <ion-datetime displayFormat="MM/YYYY" yearValues="2019,2020,2021,2022,2023" [(ngModel)]="userpayment.cvv" style="color: goldenrod; border-bottom: 1px solid black"></ion-datetime>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label floating style="color: black; font-size: 100%; font-weight: 500">CVV</ion-label>
+      <ion-input type="number" style="color: goldenrod; border-bottom: 1px solid black"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div class="btn">
+      <button id="next" (click)="cancel()"  ion-button clear round large style="color: #fff; width: 45%; letter-spacing: 3px; background:rgb(53, 52, 52)  ; font-size: 0.7em; padding: 5%; font-family:Georgia, 'Times New Roman', Times, serif;" >Cancel</button>
+      <button id="skip" (click)="userPay()" ion-button clear round large style="color: #fff; width: 45%; letter-spacing: 3px; background: rgba(167, 122, 37, 1); font-size: 0.7em; padding: 5%; font-family:Georgia, 'Times New Roman', Times, serif;">Pay Now </button>
+     </div>
+  <!-- <button (click)="userPay()" ion-button>continue to check out</button> -->
+</ion-content>
+
+ 
+   

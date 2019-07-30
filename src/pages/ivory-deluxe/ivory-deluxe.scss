@@ -1,0 +1,113 @@
+page-ivory-deluxe {
+    ion-content {
+        background: 1px solid black;
+        @font-face {
+            font-family: 'Tangerine', cursive;
+             src: url('https://fonts.googleapis.com/css?family=Satisfy|Tangerine&display=swap');
+         }
+        .container {
+            
+            width: 100%;
+            height: 100%;
+        }
+        .slides {
+           // border: 1px solid red;
+            height: 35vh;
+        }
+    .info {
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        //border: 1px solid rgb(85, 255, 38);
+        width: 80%;
+        height: 20%;
+        z-index: 5;
+        position: absolute;
+        top:32%;
+        left: auto;
+        right: auto;
+        margin-left: 10%;
+        background-color: white;
+        border-radius: 8px;
+    }
+.info2 {
+    width: 80%;
+        height: 36%;
+        z-index: 5;
+        position: absolute;
+        top:49%;
+        left: auto;
+        right: auto;
+        margin-left: 10%;
+        color: rgb(214, 140, 2);
+        border-radius: 8px;
+        background: black;
+}
+.texty {
+    border-bottom-left-radius: 6px solid black;
+    border-bottom-right-radius: 6px solid black;
+    
+
+}
+h4 {font-size: 8vw;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    //font-weight: bolder;
+    margin-top: 0;
+}
+h6 { font-weight: bolder;
+    font-family: 'Tangerine', cursive;
+    letter-spacing: 2px;
+    font-size: 6vw;
+    margin-top: 0;
+}
+h5 {//border: 1px solid red;
+    margin-top: 0;
+    font-family: 'Tangerine', cursive;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 7vw;
+}
+.icons {
+    display: flex;
+   // border: 1px solid red;
+    color: rgb(214, 140, 2);
+    text-align: center;
+  
+}
+h5, p, h6 {
+    text-align: center;
+    //border: 1px solid red;
+    margin-bottom: 0;
+}
+p {font-size: 90%;
+    margin-top: -4%;
+    color: rgb(90, 86, 86);
+}
+.btn {
+    width: 80%;
+   // border: 1px solid red;
+    z-index: 5;
+    position: absolute;
+    top:88%;
+    left: 10%;
+    text-align: center;
+}
+.two {
+    margin-top: 0;
+   // border: 1px solid yellow;
+}
+
+.one {
+    //border: 1px solid red;
+    width: 50%;
+}
+.list {
+    //border: 1px solid green;
+    display: flex;
+    margin-top: -10;
+}
+li {
+    font-size: 80%;
+}
+}
+}
+

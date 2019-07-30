@@ -1,0 +1,62 @@
+<!--
+  Generated template for the RegistermodalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>registermodal</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="container" id="image">
+   
+     
+ 
+      <div class="header">
+         <div class="logo">
+         <img src="../../assets/imgs/logome.PNG" width="40%" height="50%" 
+      >   </div>
+      <div class="h1">
+         <h1>Become a member</h1>
+      </div>
+       
+      </div>
+    
+      <div class="inputs">
+   <!--      <ion-list > -->
+    
+          <ion-item style="background: transparent">
+            <ion-label floating style="color: white" >Email</ion-label>
+            <ion-input type="" [(ngModel)]="user.email"  style="color: white"></ion-input>
+          </ion-item>
+        
+          <ion-item style="background: transparent">
+            <ion-label floating style="color: white" >Password</ion-label>
+            <ion-input type="" [(ngModel)]="user.password"  style="color: white"></ion-input>
+          </ion-item>
+        
+      <!--   </ion-list>  -->
+          <button id="btn" ion-button clear round large style="color: #fff; background: rgba(255, 255, 255, 0.144); font-size: 90%; padding: 8%; font-family:Georgia, 'Times New Roman', Times, serif;" (click)="registerUser(user)">Create my Account</button>
+     <p>Or login with </p>
+     </div>
+     
+     
+  
+    
+      <div (click)="facelogin()" class="buttom">
+          <button ion-fab style="background: transparent;border:1px solid rgba(167, 122, 37, 1)"><h6 style="color: white;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 2em; font-weight: bolder">f</h6></button>
+
+        <button  ion-fab  style="background: transparent;border:1px solid rgba(167, 122, 37, 1)"><ion-icon name="logo-google" color="light"></ion-icon></button>
+        <button ion-fab  style="background: transparent;border:1px solid rgba(167, 122, 37, 1)"><ion-icon name="logo-twitter" color="light"></ion-icon></button>
+      </div>
+    
+      <div class="login" (click)="next()">
+        <p>I'm already a member</p>
+      </div>
+    </div> 
+  
+  </ion-content>
+  

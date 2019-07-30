@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy|Tangerine&display=swap');
+page-book {
+    ion-content {
+        @font-face {
+            font-family: 'Tangerine', cursive;
+             src: url('https://fonts.googleapis.com/css?family=Satisfy|Tangerine&display=swap');  
+         }
+
+        .container {
+            margin: 0;
+            padding: 0;
+           // border: 1px solid red;
+            width: 100%;
+        
+            text-align: center;
+        }
+        .logo {
+            margin-top: 0;
+            width: 40%;
+            height: 60%;
+            //border: 1px solid green;
+            margin-left: 30%;
+        }
+        h3 {
+            font-family: 'Tangerine', cursive;
+          font-weight: 400;
+             font-size: 9vw;
+            margin-bottom: 0%;
+            padding: 0;
+            text-align: center;
+           // border: 1px solid rgb(0, 132, 255);
+        }
+        .inputs {
+            width: 90%;
+            height: 65%;
+            margin-top: 0%;
+            margin-left: 5%;
+           // border: 1px solid rgb(0, 0, 0);
+         /*    position: absolute;
+            bottom: 0; */
+        }
+        .checkin {
+            display: flex;
+            flex-direction: row;
+        }
+          .guests {
+            display: flex;
+            flex-direction: row;
+          }
+     .header {
+           
+            margin-left: 5%;
+            width: 90%;
+            height: 20%; 
+           // border: 1px solid lime;
+        }
+        .btn {
+          //  height: 15%;
+          // border: blue;
+        
+         margin-top: 5%;
+           align-content: center;
+           align-items: center;
+        }
+    }
+    }
+    
+
